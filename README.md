@@ -1,5 +1,6 @@
 # poc-modern-switch
 
+
 ````plantuml
 fraud-decision-engine
 │
@@ -24,6 +25,13 @@ fraud-decision-engine
     └── FraudAnalysisService.java
 ````
 
+
+## O que essa POC demonstra
+
+Feature Java 25	Onde:
+- Primitive Types in switch: FraudDecisionEngine
+- Pattern Matching: switch(int)
+- switch moderno: regras de decisão
 
 ````text
 Calling Bureau Provider...
