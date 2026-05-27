@@ -79,7 +79,7 @@ Demostracao:
 }
 ````
 
-### yieald
+### yield
 
 o Java precisa saber:
 
