@@ -60,10 +60,7 @@ public class FraudDecisionEngine {
      * JAVA 25 FEATURE
      * Primitive pattern matching with int
      */
-
-    private int calculateBureauRisk(
-            int bureauScore
-    ) {
+    private int calculateBureauRisk(int bureauScore) {
 
         return switch (bureauScore) {
 
