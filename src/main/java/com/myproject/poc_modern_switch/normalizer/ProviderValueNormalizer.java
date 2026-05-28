@@ -6,18 +6,14 @@ public class ProviderValueNormalizer {
 
         if (value instanceof int score) {
 
-            System.out.println(
-                    "Integer score received: " + score
-            );
+            System.out.println("Integer score received: " + score);
 
             return score;
         }
 
         if (value instanceof long score) {
 
-            System.out.println(
-                    "Long score received: " + score
-            );
+            System.out.println("Long score received: " + score);
 
             return (int) score;
         }
