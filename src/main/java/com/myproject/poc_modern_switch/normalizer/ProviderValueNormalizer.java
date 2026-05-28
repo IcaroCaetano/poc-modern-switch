@@ -20,15 +20,11 @@ public class ProviderValueNormalizer {
 
         if (value instanceof double score) {
 
-            System.out.println(
-                    "Double score received: " + score
-            );
+            System.out.println("Double score received: " + score);
 
             return (int) score;
         }
 
-        throw new IllegalArgumentException(
-                "Unsupported provider value"
-        );
+        throw new IllegalArgumentException("Unsupported provider value");
     }
 }
