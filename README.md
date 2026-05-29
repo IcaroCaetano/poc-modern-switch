@@ -191,7 +191,59 @@ Java needs to know:
 - what value should be returned.
 
 That's where yield comes in.
-  
+
+## Pattern Matching with instanceof
+
+Before:
+````
+if (obj instanceof Integer) {
+
+    Integer value = (Integer) obj;
+}
+````
+
+Now:
+
+````
+if (obj instanceof int value) {
+
+}
+````
+
+#### Demo:
+
+````java
+public class ProviderValueNormalizer {
+
+    public int normalize(Object value) {
+
+        if (value instanceof int score) {
+
+            System.out.println("Integer score received: " + score);
+
+            return score;
+        }
+
+        if (value instanceof long score) {
+
+            System.out.println("Long score received: " + score);
+
+            return (int) score;
+        }
+
+        if (value instanceof double score) {
+
+            System.out.println("Double score received: " + score);
+
+            return (int) score;
+        }
+
+        throw new IllegalArgumentException("Unsupported provider value");
+    }
+}
+````
+
+
 ## Output
 ````text
 Calling Bureau Provider...
