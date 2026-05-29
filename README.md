@@ -38,6 +38,48 @@ Java Feature 25 Where:
 
 ## 1. Modern Switch
 
+Pattern Matching was included in the Switch.
+
+You used to have something like this:
+
+````java
+public class One {
+   
+public static void testSwitch()
+
+    {
+        int day = 3;
+
+        switch (day) {
+            case 1:
+                System.out.println("Monday");
+                break;
+            case 2:
+                System.out.println("Tuesday");
+                break;
+            case 3:
+                System.out.println("Wednesday"); // This will execute
+                break;
+            default:
+                System.out.println("Invalid day");
+                break;
+        }
+    }
+    // OR
+    public static testSwitchArrows(){
+        String dayName = switch (day) {
+            case 1 -> "Monday";
+            case 2 -> "Tuesday";
+            case 3 -> "Wednesday";
+            default -> "Invalid day";
+        };
+
+        System.out.println(dayName);
+    }
+}
+````
+Agora no Java 25
+
 Demo:
 
 ````java
