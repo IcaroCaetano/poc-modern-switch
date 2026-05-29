@@ -1,5 +1,6 @@
 # poc-modern-switch
 
+## Architecture
 
 ````plantuml
 fraud-decision-engine
@@ -26,12 +27,13 @@ fraud-decision-engine
 ````
 
 
-## O que essa POC demonstra
+## What this POC demonstrates
 
-Feature Java 25	Onde:
+Java Feature 25 Where:
+
 - Primitive Types in switch: FraudDecisionEngine
 - Pattern Matching: switch(int)
-- switch moderno: regras de decisão
+- Modern switch: decision rules
 
 
 ## Switch moderno
