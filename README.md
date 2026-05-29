@@ -38,7 +38,7 @@ Java Feature 25 Where:
 
 ## 1. Modern Switch
 
-Pattern Matching was included in the Switch.
+`Pattern Matching` was included in the Switch.
 
 You used to have something like this:
 
@@ -78,7 +78,19 @@ public static void testSwitch()
     }
 }
 ````
-Agora no Java 25
+Now in Java 25
+
+You can do:
+
+````
+case int score when score >= 900
+````
+
+- Where `int` defines the pattern type
+- `score` captures the value of a variable
+- Performs matching `when score >= 900`
+
+
 
 Demo:
 
@@ -129,6 +141,43 @@ Java needs to know:
 
 - what value should be returned.
 - That's where yield comes in.
+
+The traditional switch statement simply executed code.
+
+- It did not return any value,
+- it only executed instructions..
+
+No Java moderno, o switch pode retornar valor:
+
+````java
+String result = switch (status) {
+
+    case 1 -> "Approved";
+
+    case 2 -> "Rejected";
+
+    default -> "Unknown";
+};
+
+// OR using yield
+
+public int getScore(){
+    return switch (score) {
+    
+            case int s when s >= 900 -> {
+    
+            System.out.println("VIP CUSTOMER");
+    
+    yield "APPROVED";
+            }
+    
+    default -> {
+    
+    yield "REJECTED";
+            }
+    };
+}
+````
 
   
 ## Output
