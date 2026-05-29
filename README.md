@@ -83,12 +83,13 @@ Demostracao:
 
 ### yield
 
-o Java precisa saber:
+Java needs to know:
 
-qual valor deve ser retornado.
-Aí entra o yield.
+- what value should be returned.
+- That's where yield comes in.
 
-
+  
+## Output
 ````text
 Calling Bureau Provider...
 Calling Device Provider...
