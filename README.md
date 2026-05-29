@@ -38,7 +38,7 @@ Java Feature 25 Where:
 
 ## Switch moderno
 
-Demostracao:
+Demo:
 
 ````java
  public Decision evaluate(FraudAnalysis analysis) {
