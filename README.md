@@ -178,7 +178,19 @@ public int getScore(){
     };
 }
 ````
+But there's a catch:
 
+When the case statement has:
+
+- multiple lines,
+- logic,
+- blocks of characters {},
+
+Java needs to know:
+
+- what value should be returned.
+
+That's where yield comes in.
   
 ## Output
 ````text
