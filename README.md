@@ -245,11 +245,16 @@ public class ProviderValueNormalizer {
 
 
 ## Output
+
 ````text
 Calling Bureau Provider...
 Calling Device Provider...
 Calling Geo Provider...
 Calling Behavioral Provider...
+Integer score received: 820
+Double score received: 35.7
+Long score received: 20
+Integer score received: 15
 Evaluating fraud rules...
 Final Risk Score: 85
 HIGH RISK CUSTOMER
