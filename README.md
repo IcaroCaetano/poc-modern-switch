@@ -210,6 +210,12 @@ if (obj instanceof int value) {
 }
 ````
 
+O Java:
+valida,
+faz cast,
+cria variável,
+entrega pronta.
+
 #### Demo:
 
 ````java
